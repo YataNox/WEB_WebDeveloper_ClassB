@@ -10,7 +10,7 @@
 		한 그룹으로 묶어서 다루어 집니다. 그 한 그룹은 form 태그에 의해 구분됩니다. -->
 		<!-- form 태그는 하나의 주제를 갖고 입력하는 다수의 사항을 하나의 그룹으로 묶어주는 태그입니다. -->
 		
-		<form action="">
+		<form action="03_HeaderTag.html">
 			<!-- 글자를 입력 받을 수 있는 입력란 -->
 			아이디 : <input type = "text" name = "id"> <hr>
 			PASSWORD: <input type = "password" name = "pw"> <hr>
@@ -36,6 +36,27 @@
 				<option value = "3">튀김</option>
 				<option value = "4">순대</option>
 			</select> <hr>
+			
+			<!-- 파일 입력 양식 생성 -->
+			파일 <input type = "file" name = "selectfile"> <hr>
+			
+			<!-- 버튼 생성 -->
+			<!-- 일반 버튼 : 모든 영역에서 기능이 발휘 됩니다. -->
+			<input type = "button" value = "클릭"> <hr>
+			
+			<!-- 폼 전송 및 취소 버튼 생성 -->
+			<input type = "submit" value = "전송">
+			<input type = "reset" value = "다시작성"> <hr>
+			
+			<!-- 멀티라인 텍스트입력 란 -->
+			<textarea rows="10" cols="50" name = "description">가나다라마바사</textarea> <hr>
+			
+			<!-- 입력 내용 안내 placeholder는 클릭하고 내용을 입력하면 지워지는 안내문구 -->
+			주소 : <input type = "text" size = "50" placeholder = "주소입력"> <hr>
+			
+			<!-- 보이지 않는 입력 양식 생성 -->
+			<input type = "hidden" name = "loginuser" value = "홍길동"> <hr>
+			<!-- name 과 value만 있고 형체가 없는 입력란이라기 보다 저장 데이터로 많이 사용합니다. -->
 		</form>
 		
 	</body>
